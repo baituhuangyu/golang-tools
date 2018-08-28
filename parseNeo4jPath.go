@@ -29,6 +29,7 @@ func ParsePath(data *[][]interface{})  {
             }
             vProperties := v.Properties
             fmt.Println("vProperties ", vProperties)
+            // todo something
         }
         paths = append(paths, aPath)
         // 解析关系
@@ -40,7 +41,7 @@ func ParsePath(data *[][]interface{})  {
             rIdxAbs := 0
             linkId, target, source := "", "", ""
             fmt.Println("linkId", linkId)
-            // todo
+            // todo something
             if rIdx > 0 {
                 rIdxAbs = rIdx
                 source = aPath[dSequenceFlag[2*sIdx]]
@@ -54,7 +55,7 @@ func ParsePath(data *[][]interface{})  {
             }
             v := dRelationships[rIdxAbs-1]
             fmt.Println("v ", v)
-            // todo
+            // todo something
             linkId = source + target
         }
     }
